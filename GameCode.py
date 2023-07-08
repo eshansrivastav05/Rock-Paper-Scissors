@@ -7,6 +7,10 @@ import time
 #Functions
 
 def userChoice(userSelection): #Converts the user's choice to an item
+
+    '''
+    This function converts the user's decision between 1, 2, or 3 into a proper rock, paper, or scissors item
+    '''
     
     if userSelection == 1: #Looks at what the user entered
         
@@ -23,6 +27,10 @@ def userChoice(userSelection): #Converts the user's choice to an item
     return userSelection
 
 def computerResponse(): #Computer will generate it's own choice and will be converted into an item
+
+    '''
+    This function randomly generates a number between 1, 2, or 3 and then converts it into rock, paper, or scissors
+    '''
 
     computerChoice = random.randint(1, 3) #Randomly chooses between 1, 2, or 3
     
@@ -41,6 +49,10 @@ def computerResponse(): #Computer will generate it's own choice and will be conv
     return computerChoice #Choice is saved in function call
 
 def battle(userChoice, computerResponse): #This is where operations are done to see who won
+
+    '''
+    This function compares the choices of the user and computer in order to determine who wins the round based on the rules of rock, paper, scissor
+    '''
     
     if userChoice == computerResponse:
         
@@ -75,35 +87,6 @@ def battle(userChoice, computerResponse): #This is where operations are done to 
         else:
             
             return('\nPlayer 1 Wins!')
-
-#Symbols, for fun
-
-r = '''
-    _______
----'   ____)  
-      (_____)  
-      (_____)  
-      (____)
----.__(___)
-'''
-
-p = '''
-   _______
----'   ____)____  
-          ______)  
-          _______)  
-         _______)
----.__________)
-'''
-
-s = '''
-   _______
----'   ____)____  
-          ______)  
-       __________)  
-      (____)
----.__(___)
-'''
 
 #Title Slide
 print("Welcome to Rock, Paper, Scissors!") #Game begins
