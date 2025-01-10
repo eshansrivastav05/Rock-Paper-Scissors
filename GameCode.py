@@ -91,8 +91,6 @@ def battle(userChoice, computerResponse): #This is where operations are done to 
 #Title Slide
 print("Welcome to Rock, Paper, Scissors!") #Game begins
 
-print(r,p,s)
-
 #Hidden input to start, once they press enter the code will continue
 
 while True: #Will make the user press enter to play, if they try to break the system it will repeat
@@ -224,7 +222,7 @@ while True: #Continious loops to play multiple games
         
         print('\nThe computer is making its move...')
         
-        time.sleep(3) #Time.sleep used at regular intervals to build tension and give time for the user to read the information displayed
+        time.sleep(1) #Time.sleep used at regular intervals to build tension and give time for the user to read the information displayed
         
         #Computer makes its choice
         
@@ -271,7 +269,7 @@ while True: #Continious loops to play multiple games
         
         print('\nPlease wait...')
         
-        time.sleep(3)
+        time.sleep(1)
         
         #Loops to start new round
     
@@ -284,10 +282,6 @@ while True: #Continious loops to play multiple games
     if userScore > computerScore:
         
         print('\nPlayer 1 Wins!')
-        
-    elif userScore == computerScore:
-        
-        print('\nIt\'s a tie!')
     
     else:
         
